@@ -1,0 +1,14 @@
+<template name="projects">
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+      {{> m3coreContentHeader title="Projects" subtitle="manage your projects" }}
+
+      {{> m3coretableview
+      table=TabularTables.Projects
+      selector=projectSelector
+      tableColClass="col-md-6"
+      formColClass="col-md-6"
+      }}
+
+    </div><!-- /.content-wrapper -->
+</template>
