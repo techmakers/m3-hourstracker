@@ -1,9 +1,12 @@
 /**
  * Created by cashbit on 15/06/15.
  */
-projectsCollection = new Mongo.Collection("m3hourstrackerprojects") ;
 
-projectsCollection.attachSchema(new SimpleSchema({
+m3hourstrackerprojectsCollection = new Mongo.Collection("m3hourstrackerprojects") ;
+
+
+// Attaching a schema for autoform and data validation
+m3hourstrackerprojectsCollection.attachSchema(new SimpleSchema({
     name : {
         type: String,
         label: "project"

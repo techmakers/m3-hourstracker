@@ -1,0 +1,19 @@
+<template name="m3hourstrackerprojects">
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+      {{> m3coreContentHeader title="Projects" subtitle="manage your projects" }}
+
+      <!--
+      using the m3coretableview template system to automagically produce a table and a form
+      for data browsing and editing
+      -->
+
+      {{> m3coretableview
+        table=TabularTables.m3hourstrackerProjects
+        selector=projectSelector
+        tableColClass="col-md-6"
+        formColClass="col-md-6"
+      }}
+
+    </div><!-- /.content-wrapper -->
+</template>
